@@ -10,7 +10,7 @@
 然后引用
 ``` 
 <dependency>
-    <groupId>com.github.yhqy</groupId>
+    <groupId>io.github.yhqy</groupId>
     <artifactId>dingtalk-log-springboot-starter</artifactId>
     <version>1.0-SNAPSHOT</version>
 </dependency>
