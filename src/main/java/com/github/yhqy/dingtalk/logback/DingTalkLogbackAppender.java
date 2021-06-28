@@ -36,7 +36,7 @@ public class DingTalkLogbackAppender extends UnsynchronizedAppenderBase<ILogging
         }
 
         String levelStr = level.levelStr;
-        String message = eventObject.getMessage();
+        String message = eventObject.getFormattedMessage();
         Throwable throwable = null;
         IThrowableProxy ithrowableProxy = eventObject.getThrowableProxy();
         if (ithrowableProxy instanceof ThrowableProxy) {
