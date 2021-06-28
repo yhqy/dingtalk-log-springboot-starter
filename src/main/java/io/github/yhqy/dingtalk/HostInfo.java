@@ -1,4 +1,4 @@
-package com.github.yhqy.dingtalk;
+package io.github.yhqy.dingtalk;
 
 import lombok.Data;
 import org.springframework.beans.factory.InitializingBean;

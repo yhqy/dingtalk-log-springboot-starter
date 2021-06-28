@@ -1,4 +1,4 @@
-package com.github.yhqy.dingtalk;
+package io.github.yhqy.dingtalk;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;

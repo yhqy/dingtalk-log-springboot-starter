@@ -1,15 +1,11 @@
-package com.github.yhqy.dingtalk;
+package io.github.yhqy.dingtalk;
 
-import ch.qos.logback.classic.spi.IThrowableProxy;
-import ch.qos.logback.classic.spi.ThrowableProxy;
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.exceptions.ExceptionUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.http.HttpUtil;
 import cn.hutool.json.JSONUtil;
 import lombok.Data;
-
-import static com.github.yhqy.dingtalk.DingTalkAutoConfig.config;
 
 public class DingTalkSender {
 
@@ -66,7 +62,7 @@ public class DingTalkSender {
 
     private static String getRequestUrl() {
         if (null == requestUrl) {
-            String token = config().getToken();
+            String token = DingTalkAutoConfig.config().getToken();
             requestUrl = String.format("https://oapi.dingtalk.com/robot/send?access_token=%s", token);
         }
         return requestUrl;

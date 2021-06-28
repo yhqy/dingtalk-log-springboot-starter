@@ -1,4 +1,4 @@
-package com.github.yhqy.dingtalk;
+package io.github.yhqy.dingtalk;
 
 import ch.qos.logback.classic.Level;
 import lombok.Getter;
